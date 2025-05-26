@@ -1,0 +1,15 @@
+$phone-max-width: 1000px;
+$tablet-min-width: 640px;
+$desktop-min-width: 1280px;
+
+@mixin onPhone() {
+  @media (max-width: $phone-max-width) {
+    @content;
+  }
+}
+
+@mixin onTablet() {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}

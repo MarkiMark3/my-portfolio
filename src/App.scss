@@ -1,3 +1,5 @@
+@import "../src/utils.scss";
+
 body {
   padding-inline: 120px;
   padding-top: 80px;
@@ -6,16 +8,22 @@ body {
 
 .intro {
   display: flex;
+  // flex-direction: column;
   width: 100%;
   gap: 100px;
   border-bottom: 3px solid white;
+
+  & {
+    @include onPhone {
+      flex-direction: column;
+    }
+  }
 
   &-link {
     position: relative;
     margin-bottom: 80px;
     outline: none;
     &-carusel {
-      // border: 1px solid red;
       border-radius: 50%;
       position: absolute;
       top: -25px;
@@ -30,6 +38,7 @@ body {
       width: 350px;
       height: 350px;
       transition: 1000ms ease;
+
       &:hover {
         transform: translate(-40px, -40px);
       }
@@ -51,6 +60,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & {
+      @include onPhone {
+        order: 1;
+      }
+    }
     &-name {
       margin: 0px;
       width: 500px;
@@ -127,6 +142,8 @@ body {
   border-bottom: 3px solid white;
   .container {
     display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
