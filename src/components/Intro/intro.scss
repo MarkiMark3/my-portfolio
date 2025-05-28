@@ -1,0 +1,221 @@
+@import '../../utils.scss';
+
+.intro {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  border-bottom: 3px solid white;
+
+  & {
+    @include onPhone {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-link {
+    position: relative;
+    margin-bottom: 80px;
+    outline: none;
+    &-carusel {
+      border-radius: 50%;
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      width: 400px;
+      height: 400px;
+      margin: auto;
+      animation: spin 50s linear infinite;
+      z-index: -1;
+      & {
+        @include onPhone {
+          width: 200px;
+          height: 200px;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    &-img {
+      width: 350px;
+      height: 350px;
+      transition: 1000ms ease;
+
+      & {
+        @include onPhone {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      &:hover {
+        transform: translate(-40px, -40px);
+      }
+    }
+
+    &-imgBack {
+      position: absolute;
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+      z-index: -1;
+      transition: 1000ms ease-in-out;
+      object-fit: cover;
+
+      & {
+        @include onPhone {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & {
+      @include onPhone {
+        order: 1;
+      }
+    }
+    &-name {
+      margin: 0;
+      margin-bottom: 10px;
+      & {
+        @include onPhone {
+          font-size: 35px;
+        }
+      }
+    }
+    &-prof {
+      margin: 0;
+    }
+  }
+
+  &-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+      margin-bottom: 50px;
+    }
+
+    &-stack {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      animation: spin 10s linear infinite;
+      &-img {
+        position: absolute;
+        top: 45%;
+        left: 74%;
+        width: 50px;
+        height: 50px;
+        transform-origin: -95px center;
+
+        & {
+          @include onPhone {
+            top: 37%;
+            left: 95%;
+          }
+        }
+
+        &:nth-child(1) {
+          transform: rotate(0deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(0deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(2) {
+          transform: rotate(32deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(32deg) translateX(15px);
+            }
+          }
+        }
+        &:nth-child(3) {
+          transform: rotate(64deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(64deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(4) {
+          transform: rotate(128deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(128deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(5) {
+          transform: rotate(160deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(160deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(6) {
+          transform: rotate(192deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(192deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(7) {
+          transform: rotate(224deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(224deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(8) {
+          transform: rotate(256deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(256deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(9) {
+          transform: rotate(288deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(288deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(10) {
+          transform: rotate(320deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(320deg) translateX(10px);
+            }
+          }
+        }
+        &:nth-child(11) {
+          transform: rotate(100deg) translateX(100px);
+          & {
+            @include onPhone {
+              transform: rotate(100deg) translateX(10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

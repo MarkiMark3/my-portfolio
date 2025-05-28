@@ -1,0 +1,27 @@
+.education {
+  margin-bottom: 20px;
+  border-bottom: 3px solid white;
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-img {
+        height: 300px;
+        border-radius: 50%;
+      }
+      &-text {
+        font-size: 24px;
+        color: white;
+      }
+    }
+  }
+}
