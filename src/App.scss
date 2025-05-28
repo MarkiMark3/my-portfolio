@@ -17,10 +17,12 @@ body {
     display: flex;
     align-items: center;
     gap: 50px;
+    padding-bottom: 50px;
 
     @include onPhone {
       flex-direction: column;
     }
+    border-bottom: 10px dotted white;
   }
 
   &-sum {

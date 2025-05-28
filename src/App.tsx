@@ -14,7 +14,7 @@ function Main() {
       <Intro></Intro>
       {/* <Portfolio></Portfolio> */}
 
-      <div className='porfolio'>
+      <div className='portfolio'>
         <h1>Portfolio</h1>
         <section className='portfolio-container'>
           <div className='portfolio-sum'>
