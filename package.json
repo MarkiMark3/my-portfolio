@@ -6,9 +6,9 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "vite",
-    "build": "vite build",
+    "build": "run vite build",
     "lint": "eslint .",
-    "deploy": "gh-pages -d dist",
+    "deploy": "run gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {

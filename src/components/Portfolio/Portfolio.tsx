@@ -21,11 +21,11 @@ export const Portfolio = () => {
             <li>SCSS</li>
             <li>Stylint</li>
           </div>
-          <a target="_blank" className='portfolio-sum-button' href="https://github.com/MarkiMark3/nothing-landing">
-            <button>Repository</button>
+          <a target="_blank" className='buttonLink' href="https://github.com/MarkiMark3/nothing-landing">
+            <button className='buttonLink-button'>Repository</button>
           </a>
-          <a target="_blank" className='portfolio-sum-button' href="https://www.figma.com/design/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?node-id=6802-139&p=f">
-            <button>Mockup</button>
+          <a target="_blank" className='buttonLink' href="https://www.figma.com/design/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?node-id=6802-139&p=f">
+            <button className='buttonLink-button'>Mockup</button>
           </a>
         </div>
 
@@ -48,11 +48,11 @@ export const Portfolio = () => {
             <li>SCSS</li>
             <li>Stylint</li>
           </div>
-          <a target="_blank" className='portfolio-sum-button' href="https://github.com/MarkiMark3/eco-landing">
-            <button>Repository</button>
+          <a target="_blank" className='buttonLink' href="https://github.com/MarkiMark3/eco-landing">
+            <button className='buttonLink-button'>Repository</button>
           </a>
-          <a target="_blank" className='portfolio-sum-button' href="https://www.figma.com/design/Fz588JKGuPS2Bk21De4KE5/Brand-of-eco-cosmetics-_FE-students">
-            <button>Mockup</button>
+          <a target="_blank" className='buttonLink' href="https://www.figma.com/design/Fz588JKGuPS2Bk21De4KE5/Brand-of-eco-cosmetics-_FE-students">
+            <button className='buttonLink-button'>Mockup</button>
           </a>
         </div>
 
@@ -74,8 +74,8 @@ export const Portfolio = () => {
             <li>SCSS</li>
             <li>Stylint</li>
           </div>
-          <a target="_blank" className='portfolio-sum-button' href="https://github.com/MarkiMark3/game-2048">
-            <button>Repository</button>
+          <a target="_blank" className='buttonLink' href="https://github.com/MarkiMark3/game-2048">
+            <button className='buttonLink-button'>Repository</button>
           </a>
         </div>
 
@@ -99,11 +99,11 @@ export const Portfolio = () => {
             <li>SCSS</li>
             <li>Stylint</li>
           </div>
-          <a target="_blank" className='portfolio-sum-button' href="https://github.com/MarkiMark3/nice-gadgets-website/#/home">
-            <button>Repository</button>
+          <a target="_blank" className='buttonLink' href="https://github.com/MarkiMark3/nice-gadgets-website/#/home">
+            <button className='buttonLink-button'>Repository</button>
           </a>
-          <a target="_blank" className='portfolio-sum-button' href="https://www.figma.com/design/FRxncC4lfyhs6og1L6FGEU/Phone-catalog--V2--Rounded-Style-2?node-id=2-161">
-            <button>Mockup</button>
+          <a target="_blank" className='buttonLink' href="https://www.figma.com/design/FRxncC4lfyhs6og1L6FGEU/Phone-catalog--V2--Rounded-Style-2?node-id=2-161">
+            <button className='buttonLink-button'>Mockup</button>
           </a>
         </div>
 

@@ -33,16 +33,19 @@ export const Intro = () => {
             <img className='intro-summary-stack-img' src={docker} alt="docker" />
             <img className='intro-summary-stack-img' src={vite} alt="vite" />
           </div>
-          <img
-            src={linkedin}
-            alt="LinkedinSite"
-            className='intro-link-imgBack'
-          />
+
           <img
             src={myPhoto}
             alt="myFace"
             className='intro-link-img'
           />
+
+          <img
+            src={linkedin}
+            alt="LinkedinSite"
+            className='intro-link-imgBack'
+          />
+
         </a>
 
       </div>
@@ -53,8 +56,8 @@ export const Intro = () => {
         <article className='intro-summary-text'>
           I'm a Frontend Developer skilled in <b>HTML, SCSS, BEM, JavaScript, React, Node.js, SQL, TypeScript, Redux, and Git/GitHub</b>, with an <b>Advanced level of English</b>. My experience in the USA trucking industry as a Logistic Coordinator and Dispatcher has sharpened my ability to manage complex workflows, optimize efficiency under pressure, and solve problems in high-stakes environments—skills that directly translate into building scalable and resilient web applications.
         </article>
-        <a href={CV} download='CV_Markiyan_Dmyterko_FullStack.pdf'>
-          <button>
+        <a href={CV} className='buttonLink buttonLink--last' download='CV_Markiyan_Dmyterko_FullStack.pdf'>
+          <button className='buttonLink-button'>
             Download CV
           </button>
         </a>

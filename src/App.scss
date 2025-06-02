@@ -9,7 +9,9 @@ body {
   }
 
   padding-top: 80px;
-  background-color: rgba(48, 39, 165, 0.116);
+  background-color: #212130;
+  color: white;
+  z-index: -2;
 }
 
 @keyframes spin {
@@ -36,5 +38,17 @@ body {
   }
   100% {
     color: #fff2a9;
+  }
+}
+
+.buttonLink {
+  box-sizing: content-box;
+  &--last {
+    margin-bottom: 20px;
+  }
+
+  &-button {
+    background-color: rgb(20, 20, 20);
+    color: white;
   }
 }

@@ -18,6 +18,9 @@
     position: relative;
     margin-bottom: 80px;
     outline: none;
+    &:hover .intro-link-imgBack {
+      opacity: 100;
+    }
     &-carusel {
       border-radius: 50%;
       position: absolute;
@@ -27,7 +30,6 @@
       height: 400px;
       margin: auto;
       animation: spin 50s linear infinite;
-      z-index: -1;
       & {
         @include onPhone {
           width: 200px;
@@ -41,16 +43,12 @@
       width: 350px;
       height: 350px;
       transition: 1000ms ease;
-
+      z-index: 1;
       & {
         @include onPhone {
           width: 200px;
           height: 200px;
         }
-      }
-
-      &:hover {
-        transform: translate(-40px, -40px);
       }
     }
 
@@ -59,10 +57,11 @@
       border-radius: 50%;
       width: 350px;
       height: 350px;
-      z-index: -1;
+      left: 0;
+      top: 0;
       transition: 1000ms ease-in-out;
       object-fit: cover;
-
+      opacity: 0;
       & {
         @include onPhone {
           width: 200px;
