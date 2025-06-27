@@ -1,39 +1,48 @@
 @import '../../utils.scss';
 
 .portfolio {
+  &-title {
+    font-size: $section-title-size;
+    @include onPhone {
+      font-size: $section-mobile-title-size;
+    }
+  }
   &-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    justify-content: space-between;
     gap: 50px;
     padding-bottom: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px rgba(102, 156, 255, 0.5);
 
     @include onPhone {
       flex-direction: column;
     }
-    border-bottom: 10px dotted white;
   }
 
   &-sum {
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: self-start;
     gap: 20px;
+    font-size: $text-size;
     &-title {
-      font-size: 34px;
+      margin: 0;
+      font-size: $article-title-size;
+      @include onPhone {
+        font-size: $article-mobile-title-size;
+      }
     }
   }
 
   &-site {
     position: relative;
-    height: 450px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 15px;
-    align-items: center;
-    padding-top: 40px;
-    margin-bottom: 20px;
 
     &--mirror {
       order: -1;
@@ -52,12 +61,17 @@
 
       &-img {
         width: 100%;
+        max-width: 500px;
         height: 100%;
         object-fit: cover;
         filter: blur(6px);
         transition: 800ms;
         border-radius: 25px;
         &:hover {
+          filter: blur(0px);
+        }
+
+        @include onPhone {
           filter: blur(0px);
         }
       }

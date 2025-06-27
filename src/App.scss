@@ -1,6 +1,7 @@
 @import '../src/utils.scss';
 
 body {
+  font-family: 'Outfit', sans-serif;
   padding-inline: 120px;
   & {
     @include onPhone {
@@ -48,6 +49,7 @@ body {
   }
 
   &-button {
+    border: 1px solid white;
     background-color: rgb(20, 20, 20);
     color: white;
   }

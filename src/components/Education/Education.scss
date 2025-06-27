@@ -1,4 +1,11 @@
+@import '../../utils.scss';
 .education {
+  &-title {
+    font-size: $section-title-size;
+    @include onPhone {
+      font-size: $section-mobile-title-size;
+    }
+  }
   margin-bottom: 20px;
   border-bottom: 3px solid white;
 
@@ -19,7 +26,7 @@
         border-radius: 50%;
       }
       &-text {
-        font-size: 24px;
+        font-size: $text-size;
         color: white;
       }
     }

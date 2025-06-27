@@ -6,7 +6,7 @@ import mate from '../../../public/imgs/MA.png'
 export const Education = () => {
   return (
     <div className='education'>
-      <h1>Education</h1>
+      <h1 className='education-title'>Education</h1>
       <div className='education-box'>
         <div className='education-box-item'>
           <img src={heart} alt="SHU" className='education-box-item-img' />

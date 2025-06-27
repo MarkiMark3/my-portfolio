@@ -1,6 +1,12 @@
-@import "../../utils.scss";
+@import '../../utils.scss';
 
 .contact {
+  &-title {
+    font-size: $section-title-size;
+    @include onPhone {
+      font-size: $section-mobile-title-size;
+    }
+  }
   margin-bottom: 100px;
   display: flex;
   align-items: self-start;
@@ -13,7 +19,10 @@
     margin: 0;
     text-decoration: none;
     color: white;
-    font-size: 32px;
+    font-size: $article-title-size;
+    @include onPhone {
+      font-size: $article-mobile-title-size;
+    }
     & {
       @include onPhone {
         font-size: 16px;

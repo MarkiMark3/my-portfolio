@@ -85,14 +85,27 @@
     &-name {
       margin: 0;
       margin-bottom: 10px;
+      font-size: 64px;
+
       & {
         @include onPhone {
-          font-size: 35px;
+          font-size: 40px;
         }
       }
     }
     &-prof {
+      font-size: $section-title-size;
       margin: 0;
+      @include onPhone {
+        font-size: $section-mobile-title-size;
+      }
+    }
+    &-title {
+      font-size: $article-title-size;
+      margin: 0;
+      @include onPhone {
+        font-size: $article-mobile-title-size;
+      }
     }
   }
 
@@ -100,9 +113,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 
     &-text {
+      max-width: 900px;
       margin-bottom: 50px;
+      font-size: $text-size;
     }
 
     &-stack {

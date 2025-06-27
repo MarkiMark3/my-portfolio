@@ -1,6 +1,11 @@
 $phone-max-width: 1000px;
 $tablet-min-width: 640px;
 $desktop-min-width: 1280px;
+$section-title-size: 52px;
+$article-title-size: 40px;
+$section-mobile-title-size: 35px;
+$article-mobile-title-size: 28px;
+$text-size: 20px;
 
 @mixin onPhone() {
   @media (max-width: $phone-max-width) {
