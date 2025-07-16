@@ -53,7 +53,7 @@ export const Intro = () => {
         <h2 className='intro-card-prof'>Full-Stack Developer</h2>
         <h2 className='intro-card-title'>Summary</h2>
         <article className='intro-summary-text'>
-          I'm a Frontend Developer skilled in <b>HTML, SCSS, BEM, JavaScript, React, Node.js, SQL, TypeScript, Redux, and Git/GitHub</b>, with an <b>Advanced level of English</b>. My experience in the USA trucking industry as a Logistic Coordinator and Dispatcher has sharpened my ability to manage complex workflows, optimize efficiency under pressure, and solve problems in high-stakes environments—skills that directly translate into building scalable and resilient web applications.
+          I'm a Full-Stack Developer skilled in <b>HTML, SCSS, BEM, JavaScript, React, Node.js, SQL, TypeScript, Redux, and Git/GitHub</b>, with an <b>Advanced level of English</b>. My experience in the USA trucking industry as a Logistic Coordinator and Dispatcher has sharpened my ability to manage complex workflows, optimize efficiency under pressure, and solve problems in high-stakes environments—skills that directly translate into building scalable and resilient web applications.
         </article>
         <a href={CV} className='buttonLink buttonLink--last' download='CV_Markiyan_Dmyterko_FullStack.pdf'>
           <button className='buttonLink-button'>
